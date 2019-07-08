@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Refugio Animal</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="Index.html"><img src="img/logo_true.png" width="180px"></a></h1>
+					<nav id="nav">
+						<ul>
+                            <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                            <li><a href="noticias.html">Noticias</a></li>
+                            <li><a href="foro.html">Foro</a></li>
+							<li>
+								<a href="mi_mascota.html">Mi Mascota</a>
+								<ul>
+									<li><a href="m_perdidas.html">Mascotas Perdidas</a></li>
+									<li><a href="m_encontradas.html">Mascotas Encontradas</a></li>
+									<li><a href="m_recuperadas.html">Mascotas Recuperadas</a></li>
+									<li><a href="m_publicar.html">Publicar Mascota</a></li>
+								</ul>
+                            </li>
+                            <li>
+								<a href="ayudanos.html">Ayúdanos</a>
+								<ul>
+									<li><a href="adoptar.html">Adoptar</a></li>
+									<li><a href="apadrinar.html">Apadrinar</a></li>
+									<li><a href="donar.html">Donar</a></li>
+									<li><a href="voluntariado.html">Voluntariado</a></li>
+								</ul>
+                            </li>
+                            <li><a href="carrito.html">MercaMascot</a></li>
+							<li><a href="login.html" class="button primary">Ingresar</a></li>
+						</ul>
+					</nav>
+                </header>
+            
+            <!-- Carrito -->
+                <div id="carrito" class="wrapper style1">
+                    <div class="container">
+                        <header class="major">
+                            <h2>MERCAMASCOT</h2>
+                            <p>Ayuda a nuestros amigos más necesitados, comprando alguno de nuestros 
+                            productos. Todo va dirigido al refugio o mascotitas que lo necesiten. 
+                            GRACIAS POR SU APOYO</p>
+                        </header>
+                        <div class="box alt">
+                            <div class="row gtr-uniform">
+                                <section class="col-6 col-12-medium">
+                                    <div class="row gtr-50 gtr-uniform">
+                                        <div class="col-4 col-12-medium" style="text-align: center">
+                                            <img src="img/casa.png">
+                                            <p>Transportador<br>S/. 60 <br>
+                                            <button class="button primary small" onclick="agregarProducto('Transportador', '60')">AGREGAR</button>
+                                            </p>
+                                        </div>
+                                        <div class="col-4 col-12-medium" style="text-align: center">
+                                            <img src="img/house.png">
+                                            <p>Casa pequeña<br>S/. 50 <br>
+                                            <button class="button primary small" onclick="agregarProducto('Casa Pequeña', '50')">AGREGAR</button>
+                                        </div>
+                                        <div class="col-4 col-12-medium" style="text-align: center">
+                                            <img src="img/hueso.png">
+                                            <p>Hueso de juguete<br>S/. 40 <br>
+                                            <button class="button primary small" onclick="agregarProducto('Hueso de juguete', '40')">AGREGAR</button>
+                                            </p>
+                                        </div>
+                                        <div class="col-4 col-12-medium" style="text-align: center">
+                                            <img src="img/plato.png">
+                                            <p>Plato de metal<br>S/. 30 <br>
+                                            <button class="button primary small" onclick="agregarProducto('Plato de metal', '30')">AGREGAR</button>
+                                            </p>
+                                        </div>
+                                        <div class="col-4 col-12-medium" style="text-align: center">
+                                            <img src="img/peine.png">
+                                            <p>Peine y Tijera<br>S/. 20 <br>
+                                            <button class="button primary small" onclick="agregarProducto('Peine y Tijera', '20')">AGREGAR</button>
+                                            </p>
+                                        </div>
+                                        <div class="col-4 col-12-medium" style="text-align: center">
+                                            <img src="img/shampoo.png">
+                                            <p>Shampoo medicado<br>S/. 10 <br>
+                                            <button class="button primary small" onclick="agregarProducto('Shampoo medicado', '10')">AGREGAR</button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="col-6 col-12-medium">
+                                    <div class="col-12 col-12-medium">
+                                        <header class="major">
+                                            <h3>CARRITO  DE COMPRA</h3>
+                                        </header>
+                                        <div class="table-wrapper">
+                                            <table class="alt">
+                                            <thead>
+                                                <tr>
+                                                <th>Producto</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th>Total</th>
+                                                <th>-</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tbldatos">
+                                            </tbody>
+                                        </table>
+                                        <div class="col-12"></div>
+                                            <ul class="actions fit">
+                                                <li><a href="#" class="button primary fit small">VER CARRITO</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+            <!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="">USAT</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.scrolly.min.js"></script>
+			<script src="js/jquery.dropotron.min.js"></script>
+			<script src="js/jquery.scrollex.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+
+	</body>
+</html>
